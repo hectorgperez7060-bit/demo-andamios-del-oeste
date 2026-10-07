@@ -1,6 +1,6 @@
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('#nav');
-const dialog = document.querySelector('#demo-dialog');
+const whatsappNumber = '5491133786768';
 
 menuButton.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
@@ -12,14 +12,20 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
   menuButton.setAttribute('aria-expanded', 'false');
 }));
 
-document.querySelectorAll('.js-demo-contact').forEach((button) => {
-  button.addEventListener('click', () => dialog.showModal());
-});
-
-document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-document.querySelector('.dialog-ok').addEventListener('click', () => dialog.close());
-
 document.querySelector('#quote-form').addEventListener('submit', (event) => {
   event.preventDefault();
-  dialog.showModal();
+  const data = new FormData(event.currentTarget);
+  const detail = String(data.get('detalle') || '').trim();
+  const message = [
+    'Hola, quisiera solicitar un presupuesto.',
+    '',
+    `Equipo: ${data.get('equipo')}`,
+    `Tiempo: ${data.get('tiempo')}`,
+    `Localidad: ${data.get('localidad')}`,
+    detail ? `Detalle: ${detail}` : null,
+    '',
+    '¿Podrían confirmarme disponibilidad y precio?'
+  ].filter(Boolean).join('\n');
+
+  window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
 });

@@ -26,7 +26,7 @@
       <a href="#servicios">Servicios</a>
       <a href="#cotizador">Cotizar</a>
       <a href="#zona">Zona de atención</a>
-      <button class="nav-cta js-demo-contact" type="button">Consultar</button>
+      <a class="nav-cta whatsapp-link" href="https://wa.me/5491133786768?text=Hola%2C%20quisiera%20consultar%20por%20el%20alquiler%20de%20equipos." target="_blank" rel="noopener">WhatsApp</a>
     </nav>
   </header>
 
@@ -38,7 +38,7 @@
         <p class="hero-lead">Alquiler y venta de andamios, escaleras y equipos para construcción. Una propuesta de atención rápida y cercana.</p>
         <div class="hero-actions">
           <a class="button primary" href="#cotizador">Armar mi consulta <span>→</span></a>
-          <button class="button secondary js-demo-contact" type="button">Llamar al local</button>
+          <a class="button secondary whatsapp-link" href="https://wa.me/5491133786768?text=Hola%2C%20quisiera%20consultar%20por%20el%20alquiler%20de%20equipos." target="_blank" rel="noopener">Consultar por WhatsApp</a>
         </div>
         <div class="trust-row">
           <div class="rating"><strong>4,4</strong><span class="stars" aria-label="4,4 de 5 estrellas">★★★★★</span><small>26 reseñas en Google</small></div>
@@ -46,18 +46,9 @@
           <div><strong>Atención local</strong><small>En El Palomar</small></div>
         </div>
       </div>
-      <div class="hero-visual" aria-label="Ilustración de estructura de andamios">
-        <div class="yellow-panel"></div>
-        <svg class="scaffold" viewBox="0 0 520 470" role="img" aria-label="Andamio modular ilustrado">
-          <defs><linearGradient id="steel" x1="0" x2="1"><stop stop-color="#31576f"/><stop offset=".5" stop-color="#79a3ba"/><stop offset="1" stop-color="#26475d"/></linearGradient></defs>
-          <g fill="none" stroke="url(#steel)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M80 420V65M440 420V65M55 120h410M55 255h410M55 390h410"/>
-            <path d="M90 115l340 135M430 115 90 250M90 250l340 135M430 250 90 385"/>
-            <path d="M132 420V45M388 420V45M120 48h280" stroke-width="6"/>
-          </g>
-          <g fill="#182936"><circle cx="80" cy="430" r="18"/><circle cx="440" cy="430" r="18"/></g>
-          <g fill="#f4bf18"><rect x="50" y="100" width="420" height="28" rx="4"/><rect x="50" y="370" width="420" height="28" rx="4"/></g>
-        </svg>
+      <div class="hero-visual">
+        <img src="assets/images/hero-andamios.webp" alt="Andamio modular instalado junto a una obra, con operario usando equipo de seguridad" width="1400" height="1050" fetchpriority="high">
+        <div class="hero-shade"></div>
         <div class="visual-card"><span>Consulta simple</span><strong>Equipo + tiempo + localidad</strong></div>
       </div>
     </section>
@@ -75,16 +66,19 @@
       </div>
       <div class="service-grid">
         <article class="service-card featured">
-          <span class="service-number">01</span><div class="service-icon scaffold-mini" aria-hidden="true">▦</div>
-          <h3>Andamios</h3><p>Alquiler y venta de módulos y accesorios para trabajos en altura.</p><a href="#cotizador">Consultar disponibilidad →</a>
+          <img src="assets/images/andamios-equipos.webp" alt="Marcos, plataformas, crucetas y ruedas de andamios preparados para alquiler" width="900" height="675" loading="lazy">
+          <div class="service-card-body"><span class="service-number">01</span>
+          <h3>Andamios</h3><p>Alquiler y venta de módulos y accesorios para trabajos en altura.</p><a href="#cotizador">Consultar disponibilidad →</a></div>
         </article>
         <article class="service-card">
-          <span class="service-number">02</span><div class="service-icon" aria-hidden="true">╱╲</div>
-          <h3>Escaleras y silletas</h3><p>Opciones para acceso y tareas específicas de mantenimiento.</p><a href="#cotizador">Consultar disponibilidad →</a>
+          <img src="assets/images/escaleras-tablones.webp" alt="Escaleras profesionales y tablones de obra ordenados en depósito" width="900" height="675" loading="lazy">
+          <div class="service-card-body"><span class="service-number">02</span>
+          <h3>Escaleras y tablones</h3><p>Opciones para acceso y tareas específicas de mantenimiento.</p><a href="#cotizador">Consultar disponibilidad →</a></div>
         </article>
         <article class="service-card">
-          <span class="service-number">03</span><div class="service-icon" aria-hidden="true">⚙</div>
-          <h3>Máquinas y herramientas</h3><p>Hormigoneras, hidrolavadoras y otros equipos sujetos a stock.</p><a href="#cotizador">Consultar disponibilidad →</a>
+          <img src="assets/images/maquinas-herramientas.webp" alt="Hormigonera, equipo airless e hidrolavadora listos para alquilar" width="900" height="675" loading="lazy">
+          <div class="service-card-body"><span class="service-number">03</span>
+          <h3>Máquinas y herramientas</h3><p>Hormigoneras, equipos airless e hidrolavadoras sujetos a stock.</p><a href="#cotizador">Consultar disponibilidad →</a></div>
         </article>
       </div>
     </section>
@@ -93,7 +87,7 @@
       <div class="quote-intro">
         <span class="kicker light">PRESUPUESTO RÁPIDO</span>
         <h2>Contanos qué necesitás</h2>
-        <p>Completá tres datos para preparar una consulta clara. En la versión final, el pedido puede enviarse directamente por WhatsApp.</p>
+        <p>Completá tres datos y enviá una consulta clara directamente por WhatsApp.</p>
         <ul><li>Sin compromiso</li><li>Respuesta en horario comercial</li><li>Consulta ordenada y completa</li></ul>
       </div>
       <form class="quote-form" id="quote-form">
@@ -105,8 +99,8 @@
           <label>¿En qué localidad?<input name="localidad" type="text" placeholder="Ej.: El Palomar" required></label>
         </div>
         <label>Detalle adicional <textarea name="detalle" rows="3" placeholder="Altura aproximada, cantidad o tipo de trabajo"></textarea></label>
-        <button class="button primary wide" type="submit">Preparar consulta <span>→</span></button>
-        <small class="form-note">Modo demo: no se envían datos ni se contacta al negocio.</small>
+        <button class="button primary wide" type="submit">Enviar por WhatsApp <span>→</span></button>
+        <small class="form-note">Se abrirá WhatsApp con el mensaje preparado. Podés revisarlo antes de enviarlo.</small>
       </form>
     </section>
 
@@ -115,7 +109,7 @@
         <span class="kicker">VISITANOS</span><h2>Estamos en El Palomar</h2>
         <p class="address">Marcial y Bernardo Agulleiro 419<br>B1685EVI El Palomar, Buenos Aires</p>
         <p class="pending">Dirección visible en Google y en el cartel del negocio. Confirmar con el propietario antes de la publicación final.</p>
-        <button class="button dark js-demo-contact" type="button">Ver indicaciones</button>
+        <a class="button dark" href="https://www.google.com/maps/search/?api=1&amp;query=Marcial%20y%20Bernardo%20Agulleiro%20419%2C%20El%20Palomar%2C%20Buenos%20Aires" target="_blank" rel="noopener">Cómo llegar</a>
       </div>
       <div class="map-art" aria-hidden="true">
         <div class="road road-a"></div><div class="road road-b"></div><div class="road road-c"></div><div class="road road-d"></div>
@@ -130,15 +124,7 @@
     <div><strong>Ubicación</strong><span>El Palomar, Buenos Aires</span></div>
   </footer>
 
-  <div class="sticky-contact"><span><strong>¿Necesitás un presupuesto?</strong><small>Prepará tu consulta en pocos pasos</small></span><a href="#cotizador">Cotizar ahora</a></div>
-
-  <dialog id="demo-dialog">
-    <button class="dialog-close" type="button" aria-label="Cerrar">×</button>
-    <span class="dialog-icon">✓</span>
-    <h2>Función lista para conectar</h2>
-    <p>Esta es una demo. El teléfono, WhatsApp y las indicaciones se activan únicamente después de que el negocio confirme sus datos.</p>
-    <button class="button dark dialog-ok" type="button">Entendido</button>
-  </dialog>
+  <div class="sticky-contact"><span><strong>¿Necesitás un presupuesto?</strong><small>Escribinos por WhatsApp</small></span><a class="whatsapp-link" href="https://wa.me/5491133786768?text=Hola%2C%20quisiera%20consultar%20por%20el%20alquiler%20de%20equipos." target="_blank" rel="noopener">Consultar</a></div>
 
   <script src="script.js"></script>
 </body>
