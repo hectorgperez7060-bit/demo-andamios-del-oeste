@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo de sitio web para Andamios del Oeste: alquiler y venta de equipos para obra en El Palomar y Zona Oeste.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f4bf18">
+  <title>Andamios del Oeste | Demo web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-strip">DEMO COMERCIAL · Información pendiente de confirmación con el negocio</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Andamios del Oeste, inicio">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M10 42V6m28 36V6M6 14h36M6 26h36M6 38h36M15 10l18 12M33 10 15 22M15 22l18 12M33 22 15 34"/></svg>
+      </span>
+      <span><strong>ANDAMIOS</strong><small>DEL OESTE</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav id="nav" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#cotizador">Cotizar</a>
+      <a href="#zona">Zona de atención</a>
+      <button class="nav-cta js-demo-contact" type="button">Consultar</button>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> EL PALOMAR · ZONA OESTE</div>
+        <h1>Equipos para tu obra, <em>cuando los necesitás.</em></h1>
+        <p class="hero-lead">Alquiler y venta de andamios, escaleras y equipos para construcción. Una propuesta de atención rápida y cercana.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#cotizador">Armar mi consulta <span>→</span></a>
+          <button class="button secondary js-demo-contact" type="button">Llamar al local</button>
+        </div>
+        <div class="trust-row">
+          <div class="rating"><strong>4,4</strong><span class="stars" aria-label="4,4 de 5 estrellas">★★★★★</span><small>26 reseñas en Google</small></div>
+          <div class="trust-divider"></div>
+          <div><strong>Atención local</strong><small>En El Palomar</small></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Ilustración de estructura de andamios">
+        <div class="yellow-panel"></div>
+        <svg class="scaffold" viewBox="0 0 520 470" role="img" aria-label="Andamio modular ilustrado">
+          <defs><linearGradient id="steel" x1="0" x2="1"><stop stop-color="#31576f"/><stop offset=".5" stop-color="#79a3ba"/><stop offset="1" stop-color="#26475d"/></linearGradient></defs>
+          <g fill="none" stroke="url(#steel)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M80 420V65M440 420V65M55 120h410M55 255h410M55 390h410"/>
+            <path d="M90 115l340 135M430 115 90 250M90 250l340 135M430 250 90 385"/>
+            <path d="M132 420V45M388 420V45M120 48h280" stroke-width="6"/>
+          </g>
+          <g fill="#182936"><circle cx="80" cy="430" r="18"/><circle cx="440" cy="430" r="18"/></g>
+          <g fill="#f4bf18"><rect x="50" y="100" width="420" height="28" rx="4"/><rect x="50" y="370" width="420" height="28" rx="4"/></g>
+        </svg>
+        <div class="visual-card"><span>Consulta simple</span><strong>Equipo + tiempo + localidad</strong></div>
+      </div>
+    </section>
+
+    <section class="proof-bar" aria-label="Beneficios">
+      <div><b>01</b><span><strong>Atención directa</strong><small>Consulta sin vueltas</small></span></div>
+      <div><b>02</b><span><strong>Variedad de equipos</strong><small>Para cada etapa de obra</small></span></div>
+      <div><b>03</b><span><strong>Ubicación cercana</strong><small>El Palomar, Buenos Aires</small></span></div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <div class="section-heading">
+        <div><span class="kicker">SOLUCIONES PARA OBRA</span><h2>Encontrá el equipo que necesitás</h2></div>
+        <p>Catálogo ilustrativo basado en servicios publicados históricamente. La disponibilidad real se confirma al solicitar presupuesto.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card featured">
+          <span class="service-number">01</span><div class="service-icon scaffold-mini" aria-hidden="true">▦</div>
+          <h3>Andamios</h3><p>Alquiler y venta de módulos y accesorios para trabajos en altura.</p><a href="#cotizador">Consultar disponibilidad →</a>
+        </article>
+        <article class="service-card">
+          <span class="service-number">02</span><div class="service-icon" aria-hidden="true">╱╲</div>
+          <h3>Escaleras y silletas</h3><p>Opciones para acceso y tareas específicas de mantenimiento.</p><a href="#cotizador">Consultar disponibilidad →</a>
+        </article>
+        <article class="service-card">
+          <span class="service-number">03</span><div class="service-icon" aria-hidden="true">⚙</div>
+          <h3>Máquinas y herramientas</h3><p>Hormigoneras, hidrolavadoras y otros equipos sujetos a stock.</p><a href="#cotizador">Consultar disponibilidad →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section" id="cotizador">
+      <div class="quote-intro">
+        <span class="kicker light">PRESUPUESTO RÁPIDO</span>
+        <h2>Contanos qué necesitás</h2>
+        <p>Completá tres datos para preparar una consulta clara. En la versión final, el pedido puede enviarse directamente por WhatsApp.</p>
+        <ul><li>Sin compromiso</li><li>Respuesta en horario comercial</li><li>Consulta ordenada y completa</li></ul>
+      </div>
+      <form class="quote-form" id="quote-form">
+        <label>¿Qué equipo buscás?
+          <select name="equipo" required><option value="">Seleccionar</option><option>Andamios</option><option>Escaleras o silletas</option><option>Hormigonera</option><option>Hidrolavadora</option><option>Otro equipo</option></select>
+        </label>
+        <div class="form-row">
+          <label>¿Por cuánto tiempo?<select name="tiempo" required><option value="">Seleccionar</option><option>1 día</option><option>1 semana</option><option>15 días</option><option>1 mes</option><option>A definir</option></select></label>
+          <label>¿En qué localidad?<input name="localidad" type="text" placeholder="Ej.: El Palomar" required></label>
+        </div>
+        <label>Detalle adicional <textarea name="detalle" rows="3" placeholder="Altura aproximada, cantidad o tipo de trabajo"></textarea></label>
+        <button class="button primary wide" type="submit">Preparar consulta <span>→</span></button>
+        <small class="form-note">Modo demo: no se envían datos ni se contacta al negocio.</small>
+      </form>
+    </section>
+
+    <section class="section location" id="zona">
+      <div class="location-card">
+        <span class="kicker">VISITANOS</span><h2>Estamos en El Palomar</h2>
+        <p class="address">Marcial y Bernardo Agulleiro 419<br>B1685EVI El Palomar, Buenos Aires</p>
+        <p class="pending">Dirección visible en Google y en el cartel del negocio. Confirmar con el propietario antes de la publicación final.</p>
+        <button class="button dark js-demo-contact" type="button">Ver indicaciones</button>
+      </div>
+      <div class="map-art" aria-hidden="true">
+        <div class="road road-a"></div><div class="road road-b"></div><div class="road road-c"></div><div class="road road-d"></div>
+        <div class="map-label">EL PALOMAR</div><div class="pin"><span></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><strong>ANDAMIOS DEL OESTE</strong><span>Demo de presencia digital</span></div>
+    <div><strong>Horario publicado</strong><span>Lun. a vie. hasta las 17:00 · confirmar sábados</span></div>
+    <div><strong>Ubicación</strong><span>El Palomar, Buenos Aires</span></div>
+  </footer>
+
+  <div class="sticky-contact"><span><strong>¿Necesitás un presupuesto?</strong><small>Prepará tu consulta en pocos pasos</small></span><a href="#cotizador">Cotizar ahora</a></div>
+
+  <dialog id="demo-dialog">
+    <button class="dialog-close" type="button" aria-label="Cerrar">×</button>
+    <span class="dialog-icon">✓</span>
+    <h2>Función lista para conectar</h2>
+    <p>Esta es una demo. El teléfono, WhatsApp y las indicaciones se activan únicamente después de que el negocio confirme sus datos.</p>
+    <button class="button dark dialog-ok" type="button">Entendido</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
